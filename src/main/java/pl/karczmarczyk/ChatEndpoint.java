@@ -1,6 +1,7 @@
 package pl.karczmarczyk;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -40,7 +41,9 @@ public class ChatEndpoint {
         Message message = new Message();
         message.setFrom(username);
         message.setTo(username);
-        message.setContent("Connected! Witaj!");
+        message.setContent("Connected! Welcome!");
+	message.setDateCreated(LocalDateTime.now());
+	message.setIsTechnicalMessage(Boolean.TRUE);
         broadcast(message);
     }
  
@@ -49,6 +52,7 @@ public class ChatEndpoint {
       throws IOException {
  
         message.setFrom(users.get(session.getId()));
+	message.setDateCreated(LocalDateTime.now());
         broadcast(message);
     }
  
@@ -71,17 +75,17 @@ public class ChatEndpoint {
       throws IOException {
         chatEndpoints.forEach(endpoint -> {
             synchronized (endpoint) {
-                try {
+               try {
 		    String id = endpoint.session.getId();
-		    System.out.println(id+"="+users.get(id));
-		    if (users.get(id).equals(message.getTo()) || 
-			    users.get(id).equals(message.getFrom())) {
+		    System.out.println(id + "=" + users.get(id));
+		    if (users.get(id).equals(message.getTo())
+			    || users.get(id).equals(message.getFrom())) {
 			endpoint.session.getBasicRemote().
-			    sendObject(message);
+				sendObject(message);
 		    }
-                } catch (IOException | EncodeException e) {
-                    e.printStackTrace();
-                }
+		} catch (IOException | EncodeException e) {
+		    e.printStackTrace();
+		}
             }
         });
     }
