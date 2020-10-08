@@ -1,10 +1,15 @@
 package pl.karczmarczyk;
 
+import dao.MessageDAO;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.naming.NamingException;
 import javax.websocket.EncodeException;
 import javax.websocket.OnClose;
 import javax.websocket.OnError;
@@ -81,7 +86,22 @@ public class ChatEndpoint {
 		    if (users.get(id).equals(message.getTo())
 			    || users.get(id).equals(message.getFrom())) {
 			endpoint.session.getBasicRemote().
-				sendObject(message);
+			
+			// send by WS
+			sendObject(message);
+			
+			// persist
+			try {
+			    if (!message.getIsTechnicalMessage() && users.get(id).equals(message.getFrom())) {
+				MessageDAO.insert(message);
+			    }
+			} catch (SQLException ex) {
+			    Logger.getLogger(ChatEndpoint.class.getName()).log(Level.SEVERE, null, ex);
+			} catch (NamingException ex) {
+			    Logger.getLogger(ChatEndpoint.class.getName()).log(Level.SEVERE, null, ex);
+			} catch (ClassNotFoundException ex) {
+			    Logger.getLogger(ChatEndpoint.class.getName()).log(Level.SEVERE, null, ex);
+			}
 		    }
 		} catch (IOException | EncodeException e) {
 		    e.printStackTrace();

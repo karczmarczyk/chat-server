@@ -1,6 +1,10 @@
 pl/karczmarczyk/MessageDecoder.class
-pl/karczmarczyk/App.class
 pl/karczmarczyk/ChatEndpoint.class
 pl/karczmarczyk/App$1.class
 pl/karczmarczyk/Message.class
 pl/karczmarczyk/MessageEncoder.class
+pl/karczmarczyk/utils/DBUtil.class
+pl/karczmarczyk/App.class
+pl/karczmarczyk/config/Config.class
+pl/karczmarczyk/utils/SafeStatement.class
+dao/MessageDAO.class

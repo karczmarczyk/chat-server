@@ -1,5 +1,9 @@
+/home/mateusz/JAVA/projects/chat-server/src/main/java/pl/karczmarczyk/config/Config.java
 /home/mateusz/JAVA/projects/chat-server/src/main/java/pl/karczmarczyk/Message.java
+/home/mateusz/JAVA/projects/chat-server/src/main/java/pl/karczmarczyk/utils/SafeStatement.java
+/home/mateusz/JAVA/projects/chat-server/src/main/java/dao/MessageDAO.java
 /home/mateusz/JAVA/projects/chat-server/src/main/java/pl/karczmarczyk/MessageDecoder.java
 /home/mateusz/JAVA/projects/chat-server/src/main/java/pl/karczmarczyk/ChatEndpoint.java
 /home/mateusz/JAVA/projects/chat-server/src/main/java/pl/karczmarczyk/MessageEncoder.java
+/home/mateusz/JAVA/projects/chat-server/src/main/java/pl/karczmarczyk/utils/DBUtil.java
 /home/mateusz/JAVA/projects/chat-server/src/main/java/pl/karczmarczyk/App.java
