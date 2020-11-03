@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pl.karczmarczyk.AppTest" time="0.02" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pl.karczmarczyk.AppTest" time="0.027" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="PL"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.8.0_201/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/mateusz/JAVA/projects/chat-server/target/surefire/surefirebooter2792131386952399007.jar /home/mateusz/JAVA/projects/chat-server/target/surefire 2020-10-08T21-35-56_845-jvmRun1 surefire1717482639391670424tmp surefire_02984029499195673580tmp"/>
+    <property name="sun.java.command" value="/home/mateusz/JAVA/projects/chat-server/target/surefire/surefirebooter6947066736258372288.jar /home/mateusz/JAVA/projects/chat-server/target/surefire 2020-11-03T22-48-35_911-jvmRun1 surefire900412559800552807tmp surefire_08914851505494423875tmp"/>
     <property name="surefire.test.class.path" value="/home/mateusz/JAVA/projects/chat-server/target/test-classes:/home/mateusz/JAVA/projects/chat-server/target/classes:/home/mateusz/.m2/repository/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar:/home/mateusz/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/home/mateusz/.m2/repository/org/glassfish/tyrus/tyrus-server/1.13.1/tyrus-server-1.13.1.jar:/home/mateusz/.m2/repository/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.jar:/home/mateusz/.m2/repository/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.jar:/home/mateusz/.m2/repository/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.jar:/home/mateusz/.m2/repository/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.jar:/home/mateusz/.m2/repository/org/glassfish/tyrus/tyrus-container-grizzly-server/1.13.1/tyrus-container-grizzly-server-1.13.1.jar:/home/mateusz/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.jar:/home/mateusz/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.jar:/home/mateusz/.m2/repository/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.jar:/home/mateusz/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/mateusz/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/mateusz/.m2/repository/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar:/home/mateusz/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/mateusz"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/mateusz/JAVA/projects/chat-server/target/surefire/surefirebooter2792131386952399007.jar"/>
+    <property name="surefire.real.class.path" value="/home/mateusz/JAVA/projects/chat-server/target/surefire/surefirebooter6947066736258372288.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/jdk1.8.0_201/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_201/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_201/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_201/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_201/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_201/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_201/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_201/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_201-b09"/>

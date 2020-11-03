@@ -37,13 +37,20 @@ public class Config {
 
     public static void readConfig() throws IOException {
 	String baseDir = System.getProperty("catalina.base");
-	String configFile = baseDir + SEP + "conf" + SEP + CONFIG_FILE;
+//	String configFile = baseDir + SEP + "conf" + SEP + CONFIG_FILE;
+	String configFile = CONFIG_FILE;
 	File file = new File(configFile);
+	log.info("Searching for '"+configFile+"'");
+	System.out.println("Searching for '"+configFile+"'");
 	if (file.exists()) {
 	    log.info("Loading config from 'chat.properties'");
+	    System.out.println("Loading config from 'chat.properties'");
 	    FileInputStream inStream = new FileInputStream(file);
 	    fileSettings.load(inStream);
 	    inStream.close();
+	} else {
+	    log.info("Load default configuration.");
+	    System.out.println("Load default configuration.");
 	}
 	dumpConfig();
     }
